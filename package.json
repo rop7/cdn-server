@@ -1,0 +1,23 @@
+{
+  "name": "cdn-server",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "bash server/index.sh",
+    "inst": "bash install.sh"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rop7/cdn-server.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rop7/cdn-server/issues"
+  },
+  "homepage": "https://github.com/rop7/cdn-server#readme",
+  "description": "",
+  "dependencies": {
+    "http-server": "^14.1.1"
+  }
+}

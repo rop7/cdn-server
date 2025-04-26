@@ -1,0 +1,23 @@
+[Unit]
+Description=rspctl-cdn-server
+After=network.target
+Documentation=man:rspctl-cdn-server(8)
+
+[Service]
+Type=exec
+WorkingDirectory=/usr/lib/rsp/service/rspctl-cdn-server
+ExecStart=/usr/lib/rsp/service/rspctl-cdn-server/index.sh
+Restart=on-failure
+
+# Resource limits
+MemoryMax=512M
+CPUQuota=75%
+
+# Logging
+StandardOutput=journal
+StandardError=journal
+SyslogIdentifier=rspctl-cdn-server
+LogLevelMax=warning
+
+[Install]
+WantedBy=default.target
